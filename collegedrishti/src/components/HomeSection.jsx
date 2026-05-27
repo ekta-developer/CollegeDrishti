@@ -1,3 +1,4 @@
+"use client";
 // components/HomeSection.jsx
 import React from 'react'
 import {

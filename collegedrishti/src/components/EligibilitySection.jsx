@@ -1,3 +1,4 @@
+'use client'
 // components/EligibilitySection.jsx
 
 import Image from 'next/image'
