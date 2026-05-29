@@ -1,4 +1,3 @@
-'use client'
 // import Navbar from '@/components/Header/Navbar'
 // import Image from 'next/image'
 // import HomeBanner from '@/components/HomeBanner'
@@ -63,11 +62,18 @@
 import { pagesData } from '@/data/pagesData'
 
 export default function Home () {
+  const home = pagesData?.home
+
+  if (!home?.sections) {
+    return null
+  }
+
   return (
     <div>
-      {pagesData.home.sections.map((section, index) => (
+      {home.sections.map((section, index) => (
         <div key={index}>{section}</div>
       ))}
     </div>
   )
 }
+

@@ -1,5 +1,5 @@
 "use client"
-import HomeBanner from '@/components/HomeBanner'
+import HeroBanner from '@/components/HeroBanner'
 import HomeSection from '@/components/HomeSection'
 import HowToApply from '@/components/HowToApply'
 import OurCourses from '@/components/OurCourses'
@@ -29,7 +29,7 @@ export const pagesData = {
   home: {
     title: 'Home',
     sections: [
-      <HomeBanner key='banner' />,
+      <HeroBanner key='banner' />,
       <HomeSection key='home-section' />,
       <OurCourses key='courses' />,
       <EligibilitySection key='eligibility' />,

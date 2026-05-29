@@ -1,5 +1,4 @@
 // components/HowToApply.jsx
-'use client'
 import {
   GraduationCap,
   FileText,

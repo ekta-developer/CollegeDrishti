@@ -319,47 +319,11 @@ const Navbar = () => {
                         </button>
 
                         {/* 1st Level Dropdown */}
-                        <div
-                          className='
-                    absolute
-                    left-0
-                    top-full
-                    invisible
-                    opacity-0
-                    group-hover:visible
-                    group-hover:opacity-100
-                    transition-all
-                    duration-300
-                    bg-white
-                    shadow-2xl
-                    rounded-2xl
-                    min-w-65
-                    border
-                    border-gray-100
-                    py-3
-                    z-50
-                  '
-                        >
+                        <div className='absolute left-0 top-full invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 bg-white shadow-2xl rounded-2xl min-w-65 border border-gray-100 py-3 z-50'>
                           {menu.submenu.map((section, idx) => (
                             <div key={idx} className='relative group/submenu'>
                               {/* 2nd Level Menu */}
-                              <button
-                                className='
-                          w-full
-                          flex
-                          items-center
-                          justify-between
-                          px-4
-                          py-3
-                          text-[13px]
-                          font-semibold
-                          text-gray-700
-                          hover:bg-purple-50
-                          hover:text-purple-700
-                          transition
-                          whitespace-nowrap
-                        '
-                              >
+                              <button className='w-full flex items-center justify-between px-4 py-3 text-[13px] font-semibold text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition whitespace-nowrap'>
                                 {section.heading}
                                 <FaChevronDown
                                   size={10}

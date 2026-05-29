@@ -1,4 +1,3 @@
-"use client";
 // components/HomeSection.jsx
 import React from 'react'
 import {
@@ -183,17 +182,17 @@ const HomeSection = () => {
             {/* Stats */}
             <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-8'>
               {statsData.map(item => {
-                const Icon = iconMap[item.icon]
+                const Icon = iconMap[item?.icon]
 
                 return (
                   <div
-                    key={item.id}
+                    key={item?.id}
                     className='bg-[#faf7ff] border border-[#eee5ff] rounded-xl p-5 flex flex-col items-center text-center hover:shadow-md transition'
                   >
                     <Icon className='text-[#5b168b]' size={30} />
 
                     <h3 className='text-2xl font-bold text-[#5b168b] mt-3'>
-                      {item.value}
+                      {item?.value}
                     </h3>
 
                     <p className='text-sm text-gray-600 mt-1'>{item.label}</p>

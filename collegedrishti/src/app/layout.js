@@ -7,10 +7,11 @@ export const metadata = {
   description: 'DU SOL Admission Portal'
 }
 
-export default function RootLayout ({ children }) {
+export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
+
         <Navbar />
 
         <main>{children}</main>

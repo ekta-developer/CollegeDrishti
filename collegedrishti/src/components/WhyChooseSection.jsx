@@ -1,4 +1,3 @@
-"use client";
 // components/WhyChooseSection.jsx
 import Image from 'next/image'
 import { CheckCircle } from 'lucide-react'

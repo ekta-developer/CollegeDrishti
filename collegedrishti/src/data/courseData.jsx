@@ -1,4 +1,5 @@
 import banner from '../../public/assets/images/coursesBanner.webp'
+
 export const coursesData = {
   'distance-bba-from-du-sol': {
     shortName: 'BBA',
@@ -20,8 +21,6 @@ export const coursesData = {
 
     backgroundImage: banner,
 
-    title: 'Bachelor of Business Administration (BBA)',
-
     overview: {
       description:
         'The BBA program is designed to provide students with a comprehensive understanding of business principles and management practices.',
@@ -34,6 +33,51 @@ export const coursesData = {
       ]
     },
 
+    specializationSection: {
+      title: 'BBA Specializations (Online)',
+
+      description:
+        'Choose a specialization in your final year to build domain expertise.',
+
+      specializations: [
+        {
+          id: 1,
+          title: 'Marketing Management',
+          icon: 'FaBullhorn'
+        },
+
+        {
+          id: 2,
+          title: 'Finance Management',
+          icon: 'FaChartLine'
+        },
+
+        {
+          id: 3,
+          title: 'Human Resource Management',
+          icon: 'FaUsers'
+        },
+
+        {
+          id: 4,
+          title: 'Business Analytics',
+          icon: 'FaChartBar'
+        },
+
+        {
+          id: 5,
+          title: 'International Business',
+          icon: 'FaGlobe'
+        },
+
+        {
+          id: 6,
+          title: 'Entrepreneurship & Startups',
+          icon: 'FaRocket'
+        }
+      ]
+    },
+
     curriculum: [
       {
         semester: 'Semester 1',
@@ -43,10 +87,12 @@ export const coursesData = {
             name: 'Principles of Management',
             hours: '20 Hours'
           },
+
           {
             name: 'Financial Accounting',
             hours: '18 Hours'
           },
+
           {
             name: 'Business Economics',
             hours: '18 Hours'
@@ -62,6 +108,7 @@ export const coursesData = {
             name: 'Marketing Management',
             hours: '20 Hours'
           },
+
           {
             name: 'Business Statistics',
             hours: '16 Hours'
