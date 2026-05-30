@@ -1,4 +1,14 @@
-import banner from '../../public/assets/images/coursesBanner.webp'
+import React from 'react';
+  
+  const CourseData = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default CourseData;
+  import banner from '../../public/assets/images/coursesBanner.webp'
 
 export const coursesData = {
   'distance-bba-from-du-sol': {

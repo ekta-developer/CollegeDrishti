@@ -1,4 +1,14 @@
-"use client"
+import React from 'react';
+  
+  const PagesData = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default PagesData;
+  "use client"
 import HeroBanner from '@/components/HeroBanner'
 import HomeSection from '@/components/HomeSection'
 import HowToApply from '@/components/HowToApply'

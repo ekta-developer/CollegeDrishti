@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { GraduationCap, BookOpen, FileText, Users } from 'lucide-react'
-import image from '../../public/assets/images/banner-image-removebg-preview.png'
+import image from '../../public/assets/images/banner-image.jpg'
 const HeroBanner = () => {
   return (
     <section className='w-full bg-[#f6f0f9] overflow-hidden'>

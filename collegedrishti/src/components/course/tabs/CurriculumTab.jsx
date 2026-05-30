@@ -3,17 +3,14 @@
 'use client'
 
 import { useState } from 'react'
-import {
-  FaChevronDown,
-  FaChevronUp
-} from 'react-icons/fa'
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
-const CurriculumTab = ({ curriculum }) => {
+const CurriculumTab = ({ curriculum = [] }) => {
   const [openSemester, setOpenSemester] = useState(0)
 
   return (
     <div>
-      <div className='flex items-center justify-between mb-6 mt-6'>
+      <div className='flex items-center justify-between mb-6 mt-6 flex-wrap gap-3'>
         <h2 className='text-2xl font-bold text-purple-900'>
           Curriculum / Syllabus
         </h2>
@@ -26,7 +23,7 @@ const CurriculumTab = ({ curriculum }) => {
       <div className='space-y-4'>
         {curriculum.map((semester, index) => (
           <div
-            key={index}
+            key={`${semester.semester}-${index}`}
             className='border border-gray-200 rounded-xl overflow-hidden'
           >
             <button
@@ -53,7 +50,7 @@ const CurriculumTab = ({ curriculum }) => {
                 <div className='space-y-3'>
                   {semester.subjects.map((subject, i) => (
                     <div
-                      key={i}
+                      key={`${subject.name}-${i}`}
                       className='flex items-center justify-between border-b pb-2'
                     >
                       <p className='text-gray-700'>
@@ -72,22 +69,7 @@ const CurriculumTab = ({ curriculum }) => {
         ))}
       </div>
 
-      <button
-        className='
-          mt-7
-          border-2
-          border-purple-700
-          text-purple-700
-          hover:bg-purple-700
-          hover:text-white
-          transition
-          font-semibold
-          px-6
-          py-3
-          rounded-xl
-          text-sm
-        '
-      >
+      <button className='mt-7 border-2 border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white transition font-semibold px-6 py-3 rounded-xl text-sm'>
         VIEW DETAILED SYLLABUS
       </button>
     </div>
