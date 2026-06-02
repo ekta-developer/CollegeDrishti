@@ -1,5 +1,9 @@
-import HomePage from './home/Homepage'
+'use client'
 
-export default function Page () {
-  return <HomePage />
+import HomeData from '../data/homeData';
+
+const HomePage = () => {
+  return <HomeData />
 }
+
+export default HomePage

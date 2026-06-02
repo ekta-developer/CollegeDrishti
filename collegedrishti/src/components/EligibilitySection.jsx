@@ -48,7 +48,7 @@ export default function EligibilitySection () {
               Eligibility Criteria for DU SOL Admission in 2026
             </h2>
 
-            <div className='space-y-4'>
+            <div className='space-y-4 mt-2'>
               {' '}
               {eligibilityData.map((section, index) => (
                 <div key={index}>

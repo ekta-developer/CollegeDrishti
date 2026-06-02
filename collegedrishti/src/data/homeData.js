@@ -1,14 +1,7 @@
-import React from 'react';
-  
-  const PagesData = () =>  {
-	return (
-	  <div>
-	  </div>
-	);
-  }
-  
-  export default PagesData;
-  "use client"
+'use client'
+
+import React from 'react'
+
 import HeroBanner from '@/components/HeroBanner'
 import HomeSection from '@/components/HomeSection'
 import HowToApply from '@/components/HowToApply'
@@ -35,47 +28,53 @@ const faqData = [
   }
 ]
 
-export const pagesData = {
-  home: {
-    title: 'Home',
-    sections: [
-      <HeroBanner key='banner' />,
-      <HomeSection key='home-section' />,
-      <OurCourses key='courses' />,
-      <EligibilitySection key='eligibility' />,
-      <WhyChooseSection key='why-choose' />,
-      <HowToApply key='apply' />,
+export const homeSections = [
+  {
+    id: 'banner',
+    component: <HeroBanner />
+  },
+  {
+    id: 'home-section',
+    component: <HomeSection />
+  },
+  {
+    id: 'courses',
+    component: <OurCourses />
+  },
+  {
+    id: 'eligibility',
+    component: <EligibilitySection />
+  },
+  {
+    id: 'why-choose',
+    component: <WhyChooseSection />
+  },
+  {
+    id: 'apply',
+    component: <HowToApply />
+  },
+  {
+    id: 'faq',
+    component: (
       <DynamicFAQS
-        key='faq'
         title='Frequently Asked Questions'
         faqs={faqData}
         columns={2}
       />
-    ]
-  },
-
-  courses: {
-    title: 'Courses',
-    sections: [
-      <OurCourses key='courses-page' />,
-      <EligibilitySection key='eligibility-page' />
-    ]
-  },
-
-  admission: {
-    title: 'Admission',
-    sections: [<HowToApply key='how-to-apply-page' />]
-  },
-
-  faq: {
-    title: 'FAQ',
-    sections: [
-      <DynamicFAQS
-        key='faq-page'
-        title='Frequently Asked Questions'
-        faqs={faqData}
-        columns={2}
-      />
-    ]
+    )
   }
+]
+
+const HomeData = () => {
+  return (
+    <main className='w-full overflow-hidden'>
+      {homeSections.map(section => (
+        <React.Fragment key={section.id}>
+          {section.component}
+        </React.Fragment>
+      ))}
+    </main>
+  )
 }
+
+export default HomeData

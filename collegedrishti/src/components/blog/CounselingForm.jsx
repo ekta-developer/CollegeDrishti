@@ -30,7 +30,7 @@ const CounselingForm = () => {
   return (
     <div className='bg-white border border-gray-300 rounded-md overflow-hidden'>
       {/* Header */}
-      <div className='bg-[#0B5C84] text-white px-5 py-4'>
+      <div className='bg-[#652A84] text-white px-5 py-4'>
         <h3 className='text-lg font-semibold'>
           Book 100% Free Counseling
         </h3>
@@ -55,7 +55,7 @@ const CounselingForm = () => {
           placeholder='Enter Your Name'
           autoComplete='off'
           suppressHydrationWarning
-          className='w-full h-11 border border-gray-300 px-4 rounded text-sm outline-none focus:border-[#0B5C84]'
+          className='w-full h-11 border border-gray-300 px-4 rounded text-sm outline-none focus:border-[#652A84]'
         />
 
         {/* Email */}
@@ -67,7 +67,7 @@ const CounselingForm = () => {
           placeholder='Enter Your Email'
           autoComplete='off'
           suppressHydrationWarning
-          className='w-full h-11 border border-gray-300 px-4 rounded text-sm outline-none focus:border-[#0B5C84]'
+          className='w-full h-11 border border-gray-300 px-4 rounded text-sm outline-none focus:border-[#652A84]'
         />
 
         {/* Phone */}
@@ -78,7 +78,7 @@ const CounselingForm = () => {
             onChange={handleChange}
             autoComplete='off'
             suppressHydrationWarning
-            className='h-11 border border-gray-300 rounded px-2 text-sm outline-none focus:border-[#0B5C84]'
+            className='h-11 border border-gray-300 rounded px-2 text-sm outline-none focus:border-[#652A84]'
           >
             <option value='+91'>+91 🇮🇳</option>
           </select>
@@ -91,7 +91,7 @@ const CounselingForm = () => {
             placeholder='Enter Your Number'
             autoComplete='off'
             suppressHydrationWarning
-            className='h-11 border border-gray-300 px-4 rounded text-sm outline-none focus:border-[#0B5C84]'
+            className='h-11 border border-gray-300 px-4 rounded text-sm outline-none focus:border-[#652A84]'
           />
         </div>
 
@@ -102,7 +102,7 @@ const CounselingForm = () => {
           onChange={handleChange}
           autoComplete='off'
           suppressHydrationWarning
-          className='w-full h-11 border border-gray-300 rounded px-4 text-sm outline-none focus:border-[#0B5C84]'
+          className='w-full h-11 border border-gray-300 rounded px-4 text-sm outline-none focus:border-[#652A84]'
         >
           <option value=''>Select Course</option>
           <option value='bca'>BCA</option>
@@ -117,7 +117,7 @@ const CounselingForm = () => {
           onChange={handleChange}
           autoComplete='off'
           suppressHydrationWarning
-          className='w-full h-11 border border-gray-300 rounded px-4 text-sm outline-none focus:border-[#0B5C84]'
+          className='w-full h-11 border border-gray-300 rounded px-4 text-sm outline-none focus:border-[#652A84]'
         >
           <option value=''>Select State</option>
           <option value='up'>Uttar Pradesh</option>
@@ -134,7 +134,7 @@ const CounselingForm = () => {
         {/* Submit */}
         <button
           type='submit'
-          className='w-full bg-[#0B5C84] hover:bg-[#084563] text-white font-semibold py-3 rounded transition duration-300'
+          className='w-full bg-[#652A84] hover:bg-[#470f74] text-white font-semibold py-3 rounded transition duration-300'
         >
           SUBMIT
         </button>
