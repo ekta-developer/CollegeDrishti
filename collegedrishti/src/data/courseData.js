@@ -1,23 +1,20 @@
-import React from 'react';
-  
-  const CourseData = () =>  {
-	return (
-	  <div>
-	  </div>
-	);
-  }
-  
-  export default CourseData;
-  import banner from '../../public/assets/images/coursesBanner.webp'
+import React from 'react'
+
+const CourseData = () => {
+  return <div></div>
+}
+
+export default CourseData
+import banner from '../../public/assets/images/coursesBanner.webp'
 
 export const coursesData = {
   'distance-bba-from-du-sol': {
     shortName: 'BBA',
 
-    title: 'Bachelor of Business Administration (BBA)',
+    title: 'Online BBA (DU SOL Bachelor of Business Administration)',
 
     description:
-      'Build a strong foundation in business management, leadership, and entrepreneurship. Gain practical skills and industry insights to kickstart your career.',
+      ' Earn an Online BBA (Bachelor of Business Administration) to build a strong foundation in business, management, and leadership. Ideal for students who want flexible learning and career options in marketing, HR, finance, or entrepreneurship. Study at your own pace and prepare for the corporate world. Enrol now.',
 
     duration: '3 Years',
 
@@ -33,7 +30,7 @@ export const coursesData = {
 
     overview: {
       description:
-        'The BBA program is designed to provide students with a comprehensive understanding of business principles and management practices.',
+        'It is the Online BBA program offered by the University of Delhi School of Open Learning (DU SOL) is specifically designed for students looking to pursue a career in the field of management and business with a flex-learning approach. This is an excellent choice for professionals working as well as competitive exam candidates and students unable to take regular classes on campus. The course is structured according to a semester, and it is completed over a period of 3 years.The curriculum of the course is focused on important management and business topics such as Marketing, Finance, Accounting, Human Resource Management, and Business Communication. In addition to the theoretical information, students also develop knowledge through practical assignments and projects, case studies and online learning assistance.One of the major advantages that is part of the DU SOL Online BBA course is the low cost of tuition, and DU SOL degrees are recognized and valid for higher education and employment opportunities as per UGC-DEB norms.  This is awarded by Delhi University. Students have access to the study material online, recordings of lectures, online academic sessions, as well as a user-friendly platform that provides a pleasant learning experience. This program is ideal for those who wish to build strong business skills and prepare themselves for future opportunities in their career or for further education options like an MBA.',
 
       points: [
         'Industry-relevant curriculum',

@@ -21,7 +21,7 @@ export default function WhyChooseSection () {
                 src={image}
                 alt='Why Choose'
                 fill
-                className='object-contain rounded-3xl'
+                className='object-cover sm:object-contain'
               />
             </div>
           </div>

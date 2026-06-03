@@ -1,6 +1,85 @@
 'use client'
 
 import React, { useState } from 'react'
+import Select from 'react-select'
+import { Flag } from 'react-svg-flag-kit'
+import Image from 'next/image'
+import img1 from '../../../public/assets/images/flags/in.png'
+import img2 from '../../../public/assets/images/flags/us.png'
+import img3 from '../../../public/assets/images/flags/gb.png'
+import img4 from '../../../public/assets/images/flags/au.png'
+import img5 from '../../../public/assets/images/flags/jp.png'
+import img6 from '../../../public/assets/images/flags/de.png'
+import img7 from '../../../public/assets/images/flags/fr.png'
+import img8 from '../../../public/assets/images/flags/ae.png'
+import img9 from '../../../public/assets/images/flags/cn.png'
+import img10 from '../../../public/assets/images/flags/bd.png'
+
+const countryOptions = [
+  {
+    value: '+91',
+    label: '+91',
+    flag: img1
+  },
+  {
+    value: '+1',
+    label: '+1',
+    flag: img2
+  },
+  {
+    value: '+44',
+    label: '+44',
+    flag: img3
+  },
+  {
+    value: '+61',
+    label: '+61',
+    flag: img4
+  },
+  {
+    value: '+81',
+    label: '+81',
+    flag: img5
+  },
+  {
+    value: '+49',
+    label: '+49',
+    flag: img6
+  },
+  {
+    value: '+33',
+    label: '+33',
+    flag: img7
+  },
+  {
+    value: '+971',
+    label: '+971',
+    flag: img8
+  },
+  {
+    value: '+86',
+    label: '+86',
+    flag: img9
+  },
+  {
+    value: '+880',
+    label: '+880',
+    flag: img10
+  }
+]
+
+const formatOptionLabel = ({ flag, label }) => (
+  <div className='flex items-center gap-2'>
+    <Image
+      src={flag}
+      alt='flag'
+      width={20}
+      height={20}
+      className='rounded-full object-cover'
+    />
+    <span>{label}</span>
+  </div>
+)
 
 const CounselingForm = () => {
   const [formData, setFormData] = useState({
@@ -9,19 +88,20 @@ const CounselingForm = () => {
     phone: '',
     countryCode: '+91',
     course: '',
-    state: '',
+    state: ''
   })
+  const [selectedCountry, setSelectedCountry] = useState(countryOptions[0])
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target
 
-    setFormData((prev) => ({
+    setFormData(prev => ({
       ...prev,
-      [name]: value,
+      [name]: value
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault()
 
     console.log(formData)
@@ -31,9 +111,7 @@ const CounselingForm = () => {
     <div className='bg-white border border-gray-300 rounded-md overflow-hidden'>
       {/* Header */}
       <div className='bg-[#652A84] text-white px-5 py-4'>
-        <h3 className='text-lg font-semibold'>
-          Book 100% Free Counseling
-        </h3>
+        <h3 className='text-lg font-semibold'>Book 100% Free Counseling</h3>
 
         <p className='text-sm mt-1 opacity-90'>
           Get 1 to 1 Expert Guidance from SO
@@ -72,16 +150,14 @@ const CounselingForm = () => {
 
         {/* Phone */}
         <div className='grid grid-cols-[90px_1fr] gap-3'>
-          <select
-            name='countryCode'
-            value={formData.countryCode}
-            onChange={handleChange}
-            autoComplete='off'
-            suppressHydrationWarning
-            className='h-11 border border-gray-300 rounded px-2 text-sm outline-none focus:border-[#652A84]'
-          >
-            <option value='+91'>+91 🇮🇳</option>
-          </select>
+          <Select
+            options={countryOptions}
+            value={selectedCountry}
+            onChange={setSelectedCountry}
+            formatOptionLabel={formatOptionLabel}
+            isSearchable
+            classNamePrefix='react-select'
+          />
 
           <input
             type='tel'
@@ -127,8 +203,7 @@ const CounselingForm = () => {
 
         {/* Disclaimer */}
         <p className='text-[11px] text-gray-500 leading-5'>
-          I authorise SO to contact me with updates via
-          SMS/Email/WhatsApp.
+          I authorise SO to contact me with updates via SMS/Email/WhatsApp.
         </p>
 
         {/* Submit */}

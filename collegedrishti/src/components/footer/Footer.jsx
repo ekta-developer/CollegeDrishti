@@ -143,7 +143,7 @@ const Footer = () => {
 
         {/* Bottom Line */}
         <div className='border-t border-white/20 mt-10 pt-5 text-center text-sm text-gray-300'>
-          © 2025 DOSOLCOLLEGEDRISHTI. All Rights Reserved.
+          © 2025 Powered by CollegeDrishti. All Rights Reserved.
         </div>
       </div>
     </footer>
