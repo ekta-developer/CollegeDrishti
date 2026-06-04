@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { GraduationCap } from 'lucide-react'
 
 export default function OurCourses () {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(0)
 
   const coursesData = {
     tabs: [
@@ -20,7 +20,7 @@ export default function OurCourses () {
             subtitle: 'Bachelor Of Arts',
             duration: '3 Year',
             description:
-              'Online and distance BA programs provides students with flexible and accessible education.',
+              'Flexible BA programs designed to help students build strong academic knowledge and career-ready skills.',
             buttonText: 'Know More',
             link: '/courses/ba'
           },
@@ -31,7 +31,7 @@ export default function OurCourses () {
             subtitle: 'Bachelor Of Business Administration',
             duration: '3 Year',
             description:
-              'Online BBA program is designed to provide a strong foundation in business world.',
+              'Develop business, management, and leadership skills through industry-focused BBA programs.',
             buttonText: 'Know More',
             link: '/courses/bba'
           },
@@ -42,7 +42,7 @@ export default function OurCourses () {
             subtitle: 'Bachelor Of Commerce',
             duration: '3 Year',
             description:
-              'BCom program is perfect for online learners seeking quality education at home.',
+              'Comprehensive commerce programs that provide knowledge in finance, accounting, and business operations.',
             buttonText: 'Know More',
             link: '/courses/bcom'
           },
@@ -53,7 +53,7 @@ export default function OurCourses () {
             subtitle: 'Bachelor Of Management Studies',
             duration: '3 Year',
             description:
-              'BMS program can be your gateway to a successful and fulfilling career.',
+              'Career-oriented management studies program focused on leadership, strategy, and professional growth.',
             buttonText: 'Know More',
             link: '/courses/bms'
           }
@@ -70,7 +70,7 @@ export default function OurCourses () {
             subtitle: 'Master Of Business Administration',
             duration: '2 Year',
             description:
-              'MBA program prepares students for leadership and management roles.',
+              'THE DU SOL MBA program provides industry-focused management education through distance and online learning.',
             buttonText: 'Know More',
             link: '/courses/mba'
           },
@@ -81,7 +81,7 @@ export default function OurCourses () {
             subtitle: 'Master Of Commerce',
             duration: '2 Year',
             description:
-              'MCom provides advanced knowledge in commerce and accounting.',
+              'THE DU SOL MCom program is designed to build strong knowledge in commerce, finance, and business studies.',
             buttonText: 'Know More',
             link: '/courses/mcom'
           },
@@ -92,20 +92,20 @@ export default function OurCourses () {
             subtitle: 'Master Of Arts',
             duration: '2 Year',
             description:
-              'MA course helps students gain expertise in humanities and arts.',
+              'DU SOL offers MA programs in multiple disciplines through flexible online and distance learning modes.',
             buttonText: 'Know More',
             link: '/courses/ma'
           },
 
           {
             id: 8,
-            name: 'MCA',
-            subtitle: 'Master Of Computer Applications',
+            name: 'MLIS',
+            subtitle: 'Master Of Library And Information Science',
             duration: '2 Year',
             description:
-              'MCA program focuses on software development and IT technologies.',
+              'THE DU SOL MLIS program helps students develop professional skills in library and information science through distance education.',
             buttonText: 'Know More',
-            link: '/courses/mca'
+            link: '/courses/mlis'
           }
         ]
       }
@@ -117,12 +117,41 @@ export default function OurCourses () {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         {/* Heading */}
         <div className='flex flex-col items-center justify-center text-center mb-10'>
-          <div className='flex items-center gap-2 text-[#5b1392] font-bold uppercase'>
-            <GraduationCap className='w-6 h-6' />
+          <div className='flex flex-col items-center'>
+            <div className='flex items-center gap-2 text-[#5b1392] font-bold uppercase'>
+              <GraduationCap className='w-6 h-6' />
 
-            <h2 className='text-2xl md:text-4xl font-extrabold'>Our Courses</h2>
+              <h2 className='relative text-2xl md:text-4xl font-extrabold pb-3'>
+                Our Courses
+                {/* Underline */}
+                <span className='absolute left-1/2 -translate-x-1/2 bottom-0 w-20 h-1 bg-[#5b1392] rounded-full'></span>
+              </h2>
+            </div>
           </div>
 
+          <div className='max-w-6xl mx-auto mt-6'>
+            <p className='text-gray-600 text-sm md:text-base leading-7 md:leading-8 text-center'>
+              DU SOL provides a diverse selection of academic programs for
+              students who are looking for flexibility in their higher
+              education. The college caters to students who want to pursue their
+              studies with no regular classes on campus, making it a great
+              option for professionals working full-time and exam-taking
+              students and those with commitments to their personal lives.
+              <br />
+              <br />
+              The school offers undergraduate and postgraduate programs in
+              different disciplines, allowing students to select programs that
+              match their academic and professional objectives. The most popular
+              undergraduate programs are BA, BCom, BBA and BMS. Postgraduate
+              options include MA, MCom, MBA and other specialized courses.
+              <br />
+              <br />
+              Whether you're planning to start your undergraduate studies or
+              continue with postgraduate education, DU SOL offers an accessible
+              and well-recognized pathway to achieve your academic and
+              professional goals.
+            </p>
+          </div>
           {/* Navigation Tabs */}
           <div className='flex items-center gap-4 md:gap-10 mt-6 flex-wrap justify-center'>
             {coursesData.tabs.map((tab, index) => (
@@ -145,7 +174,6 @@ export default function OurCourses () {
             ))}
           </div>
         </div>
-
         {/* Courses Grid */}
         <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6'>
           {coursesData.tabs[activeTab].courses.map(course => (

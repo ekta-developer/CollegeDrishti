@@ -1,4 +1,5 @@
-'use client'
+
+  'use client'
 
 import HomeData from '../data/homeData'
 

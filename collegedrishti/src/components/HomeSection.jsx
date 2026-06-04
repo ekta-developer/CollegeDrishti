@@ -21,6 +21,7 @@ const iconMap = {
   BadgeCheck: BadgeCheck,
   Layers3: Layers3
 }
+import Link from 'next/link'
 
 const HomeSection = () => {
   const newsData = [
@@ -175,48 +176,56 @@ const HomeSection = () => {
 
               <div className='mt-5 space-y-5 text-gray-600 text-sm md:text-base leading-7 text-justify'>
                 <p>
-                  DU SOL is one of the most well-known institutions that offer
-                  Distance and Online Education in India, providing high-quality
-                  higher education options to students throughout the nation.
-                  COLLEGEDRISHTI allows students to explore all information on
-                  DU SOL courses, admissions, and eligibility, as well as the
-                  outcomes, fees, and online learning programs, all in one
-                  place.
+                  DU SOL has become one of the top options for students who want
+                  inexpensive and flexible college education across India. Since
+                  it is a member of the University of Delhi, the school allows
+                  students to pursue approved degree programs, without the
+                  restrictions of traditional classroom instruction.
                 </p>
 
                 <p>
-                  DU SOL provides a wide selection of postgraduate and
-                  undergraduate programmes for students looking for an
-                  affordable and flexible education. It is recognized as a
-                  reputable institution by the University Grants Commission
-                  (UGC) and is backed by experienced faculty.
+                  Through the many years, DU SOL has helped thousands of
+                  students to continue their education through its
+                  distance-learning and online learning approach. The university
+                  offers numerous undergraduate and postgraduate classes that
+                  are designed specifically to address the needs of students who
+                  are just starting out professional, professionals in the
+                  workforce, as well as those who wish to increase their skills.
                 </p>
 
                 <p>
-                  DU SOL has built an enviable reputation for its accessibility
-                  and career-focused training. DU SOL is recognized by UGC and
-                  is accredited by NAAC, which makes it a respected institution
-                  that provides top-quality university education across India.
+                  One of the main benefits of pursuing a degree at DU SOL is the
+                  opportunity to obtain an academic degree in the University of
+                  Delhi while maintaining the flexibility of learning. Students
+                  can access study material as well as academic support, exam
+                  updates, and other resources for learning via a standardized
+                  digital environment.
                 </p>
 
                 <p>
-                  Students have access to the most up-to-date information on DU
-                  SOL admissions, entrance information, scholarships, exam
-                  dates, and assistance with their studies. Our platform is
-                  committed to supporting students through their academic
-                  experience with reliable information and reliable education
-                  assistance.
+                  DU SOL focuses on making high-quality education available to
+                  students from diverse backgrounds. Through its approach to
+                  student-friendly with a reasonable fee structure and a
+                  recognized academic framework The institution continues to
+                  play an integral part in expanding opportunities for higher
+                  education across the nation.
                 </p>
 
                 <p>
-                  Students who are interested in DU SOL admission can explore
-                  information about the courses, eligibility requirements for
-                  application, procedures to apply, and important information
-                  via COLLEGEDRISHTI. By focusing on the student and providing
-                  an unwavering guidance system, we hope to assist students in
-                  making informed choices to ensure a successful educational
-                  future.
+                  If you're looking for an alternative to continue your
+                  education while also balancing professional or personal
+                  demands, DU SOL offers a efficient and reliable path to
+                  reaching your academic and professional objectives.
                 </p>
+              </div>
+
+              <div className='flex justify-center mt-8'>
+                <Link
+                  href='/'
+                  className='bg-yellow-400 hover:bg-yellow-500 text-black text-sm font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg'
+                >
+                  FREE Guidance
+                </Link>
               </div>
             </div>
 

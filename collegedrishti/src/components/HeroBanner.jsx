@@ -72,16 +72,15 @@ const HeroBanner = () => {
 
             {/* Heading */}
             <h1 className='mt-2 text-lg sm:text-2xl lg:text-4xl font-bold leading-tight'>
-              Find the Right College.
+              Apply Now for DU SOL
               <br />
-              Shape Your <span className='text-yellow-400'>Bright Future.</span>
+              UG & PG <span className='text-yellow-400'>Admission 2026 </span>
             </h1>
 
             {/* Description */}
             <p className='mt-3 text-[9px] sm:text-[10px] lg:text-xs text-gray-200 leading-5 max-w-lg'>
-              Discover top colleges, courses, admission updates, scholarships,
-              exam information, and career guidance — all in one place with DU
-              SOL COLLEGEDRISHTI.
+              Explore top colleges, online courses, admission updates, entrance
+              exams, scholarships, and career guidance — all in one place.
             </p>
 
             {/* Accreditation Cards */}
@@ -151,7 +150,7 @@ const HeroBanner = () => {
                 href='/contact'
                 className='border border-white/40 hover:bg-white hover:text-black text-white text-[10px] font-semibold px-4 py-2 rounded-lg transition-all duration-300'
               >
-                FREE COUNSELLING
+                GET FREE COUNSELLING
               </Link>
             </div>
           </div>

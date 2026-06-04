@@ -1,4 +1,5 @@
-'use client'
+
+  'use client'
 
 import '../../app/globals.css'
 import { useState } from 'react'
@@ -219,7 +220,7 @@ const Navbar = () => {
             {/* LOGO */}
             <Link href='/'>
               <h1 className='text-[11px] xs:text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-purple-900 leading-tight'>
-                DOSOLCOLLEGEDRISHTI
+                DU SOL
               </h1>
             </Link>
 

@@ -3,12 +3,10 @@ import Image from 'next/image'
 import { CheckCircle } from 'lucide-react'
 import image from '../../public/assets/images/choose.jpeg'
 const features = [
-  'Accurate & Updated Information',
-  'Wide Range of Colleges & Courses',
-  'Admission & Entrance Exam Updates',
-  'Scholarship & Career Guidance',
-  'Student-Friendly Support System',
-  'Trusted Education Resources in One Place'
+  'Professionals in the workforce',
+  'Fresh graduates ',
+  'Entrepreneurs',
+  'Person with a variety of responsibilities'
 ]
 
 export default function WhyChooseSection () {
@@ -35,17 +33,14 @@ export default function WhyChooseSection () {
             </p>
 
             <h2 className='text-xl sm:text-2xl lg:text-3xl font-bold text-purple-900 leading-snug'>
-              Why Choose DOSOLCOLLEGEDRISHTI?
+              Why Choose DU SOL?
             </h2>
 
             <p className='text-gray-600 text-xs sm:text-sm leading-relaxed mt-3'>
-              COLLEGEDRISHTI is committed to helping students make informed
-              educational and career decisions with confidence. We provide
-              accurate, updated, and reliable information about colleges,
-              courses, admissions, entrance exams, results, and scholarships —
-              all in one platform. Our mission is to simplify the education
-              journey by offering trusted guidance, easy access to important
-              updates, and student-focused support for a brighter future.
+              In the past, DU SOL has become the preferred option for students
+              looking for an accessible and flexible higher education.The
+              learning experience offered at DU SOL is designed to help students
+              with diverse backgrounds, such as
             </p>
 
             {/* Features */}
@@ -60,6 +55,12 @@ export default function WhyChooseSection () {
                 </div>
               ))}
             </div>
+
+            <p className='text-gray-600 text-xs sm:text-sm leading-relaxed mt-3'>
+              One of the main advantages in DU SOL is its focus on making higher
+              education easily accessible, and cost-effective.With a solid
+              foundation of online and distance studying.
+            </p>
 
             {/* Button */}
             <button className='mt-6 bg-purple-800 hover:bg-purple-900 transition-all duration-300 text-white font-semibold px-5 py-2.5 rounded-lg text-xs sm:text-sm shadow-md'>
