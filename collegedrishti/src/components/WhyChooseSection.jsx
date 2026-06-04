@@ -3,10 +3,12 @@ import Image from 'next/image'
 import { CheckCircle } from 'lucide-react'
 import image from '../../public/assets/images/choose.jpeg'
 const features = [
-  'Authentic & Updated Information',
-  'Wide Range Of Colleges & Courses',
-  'Entrance Exam & Result Updates',
-  'Scholarship & Admission Guidance'
+  'Accurate & Updated Information',
+  'Wide Range of Colleges & Courses',
+  'Admission & Entrance Exam Updates',
+  'Scholarship & Career Guidance',
+  'Student-Friendly Support System',
+  'Trusted Education Resources in One Place'
 ]
 
 export default function WhyChooseSection () {
@@ -37,10 +39,13 @@ export default function WhyChooseSection () {
             </h2>
 
             <p className='text-gray-600 text-xs sm:text-sm leading-relaxed mt-3'>
-              We provide accurate, updated and reliable information about
-              colleges, courses, admissions, results and scholarship,
-              scholarships. Our mission is to help students make the right
-              career choices.
+              COLLEGEDRISHTI is committed to helping students make informed
+              educational and career decisions with confidence. We provide
+              accurate, updated, and reliable information about colleges,
+              courses, admissions, entrance exams, results, and scholarships —
+              all in one platform. Our mission is to simplify the education
+              journey by offering trusted guidance, easy access to important
+              updates, and student-focused support for a brighter future.
             </p>
 
             {/* Features */}

@@ -8,31 +8,31 @@ import degreeImage from '../../public/assets/images/degree.jpg'
 
 const eligibilityData = [
   {
-    title: 'Educational Qualification:',
+    title: 'Educational Qualification',
     items: [
-      'Undergraduate (UG): Candidates must have passed the Intermediate examination (10+2) from a recognized board.',
-      "Postgraduate (PG): Candidates must hold a Bachelor's degree from a recognized university."
+      'Undergraduate (UG): Candidates must have completed their 10+2 examination from a recognized board or institution.',
+      'Postgraduate (PG): Applicants must complete a bachelor’s degree from a recognized university to apply for PG programs at DU SOL.'
     ]
   },
   {
-    title: 'Minimum Marks:',
+    title: 'Minimum Qualification Marks',
     items: [
-      'UG: The minimum qualifying mark is generally 60% in the 10+2 examination.',
-      'PG: The minimum qualifying mark is generally 50% in the Bachelor’s degree for students from recognized and reputable universities/colleges.'
+      'UG Programs: Students are generally required to secure the minimum qualifying marks in their 10+2 examination as per DU SOL admission guidelines.',
+      'PG Programs: Candidates applying for postgraduate courses must meet the minimum percentage criteria in their graduation degree.'
     ]
   },
   {
-    title: 'Entrance Exams:',
+    title: 'Entrance-Based Admission',
     items: [
-      'DU SOL admissions for some programs may also be based on entrance exams conducted by the university.'
+      'Some DU SOL programs may require candidates to qualify for entrance examinations conducted or accepted by the university for admission purposes.'
     ]
   },
   {
-    title: 'General Requirements:',
+    title: 'Additional Requirements',
     items: [
-      'All applicants must meet the minimum age requirement as specified by DU SOL.',
-      'Reserved category candidates may have relaxation in minimum percentage requirements as per university guidelines.',
-      'International students must provide equivalent qualifications recognized by the Association of Indian Universities (AIU).'
+      'Applicants must fulfill the eligibility conditions specified by DU SOL for their selected course.',
+      'Reserved category students may receive relaxation in marks according to university norms.',
+      'International applicants must provide equivalent qualifications recognized by authorized educational bodies.'
     ]
   }
 ]
@@ -48,15 +48,14 @@ export default function EligibilitySection () {
               Eligibility Criteria for DU SOL Admission in 2026
             </h2>
 
-            <div className='space-y-4 mt-2'>
-              {' '}
+            <div className='space-y-6 mt-6'>
               {eligibilityData.map((section, index) => (
                 <div key={index}>
-                  <h3 className='text-[#FFD23F] text-lg sm:text-xl font-semibold mb-1'>
+                  <h3 className='text-[#FFD23F] text-lg sm:text-xl font-semibold mb-3'>
                     {section.title}
                   </h3>
 
-                  <div className='space-y-5'>
+                  <div className='space-y-4'>
                     {section.items.map((item, idx) => (
                       <div key={idx} className='flex items-start gap-3'>
                         <CheckCircle2
@@ -64,7 +63,7 @@ export default function EligibilitySection () {
                           className='text-white shrink-0 mt-1'
                         />
 
-                        <p className='text-white text-xs sm:text-sm leading-6'>
+                        <p className='text-white text-sm sm:text-base leading-7'>
                           {item}
                         </p>
                       </div>
@@ -76,18 +75,18 @@ export default function EligibilitySection () {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className='lg:col-span-5 flex flex-col items-center mt-13'>
+          <div className='lg:col-span-5 flex flex-col items-center lg:mt-12'>
             <div className='relative w-full max-w-95'>
               <Image
                 src={degreeImage}
                 alt='DU Degree'
-                className='w-full h-auto object-cover border-[6px] border-gray-200 shadow-2xl'
+                className='w-full h-auto object-cover border-[6px] border-gray-200 shadow-2xl rounded-md'
                 priority
               />
             </div>
 
             {/* BUTTON */}
-            <button className='mt-5 bg-[#FFC800] hover:bg-yellow-400 transition-all duration-300 text-black font-medium text-sm px-6 py-3 rounded-md flex items-center gap-2 shadow-lg'>
+            <button className='mt-6 bg-[#FFC800] hover:bg-yellow-400 transition-all duration-300 text-black font-semibold text-sm px-6 py-3 rounded-md flex items-center gap-2 shadow-lg'>
               Get FREE Consultation
               <ArrowRightCircle size={18} />
             </button>

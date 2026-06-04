@@ -11,7 +11,7 @@ export default function OurCourses () {
   const coursesData = {
     tabs: [
       {
-        title: 'Popular Courses',
+        title: 'Bachelor Courses',
 
         courses: [
           {

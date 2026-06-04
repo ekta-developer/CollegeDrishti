@@ -168,19 +168,66 @@ const HomeSection = () => {
         <div className='lg:col-span-8'>
           <div className='bg-white rounded-2xl border border-gray-200 shadow-sm p-5 md:p-8 h-full'>
             {/* Top Heading */}
-            <div>
-              <h2 className='text-2xl md:text-3xl font-bold text-[#5b168b]'>
-                Welcome to DOSOLCOLLEGEDRISHTI
+            <div className='w-full'>
+              <h2 className='text-2xl md:text-3xl font-bold text-[#5b168b] leading-tight'>
+                About Us – Welcome to Du SOL COLLEGEDRISHTI
               </h2>
 
-              <p className='text-gray-600 mt-2 text-sm md:text-base'>
-                Your one-stop destination for college admissions, entrance
-                exams, results, scholarships & education news.
-              </p>
+              <div className='mt-5 space-y-5 text-gray-600 text-sm md:text-base leading-7 text-justify'>
+                <p>
+                  DU SOL is one of the most well-known institutions that offer
+                  Distance and Online Education in India, providing high-quality
+                  higher education options to students throughout the nation.
+                  COLLEGEDRISHTI allows students to explore all information on
+                  DU SOL courses, admissions, and eligibility, as well as the
+                  outcomes, fees, and online learning programs, all in one
+                  place.
+                </p>
+
+                <p>
+                  DU SOL provides a wide selection of postgraduate and
+                  undergraduate programmes for students looking for an
+                  affordable and flexible education. It is recognized as a
+                  reputable institution by the University Grants Commission
+                  (UGC) and is backed by experienced faculty.
+                </p>
+
+                <p>
+                  DU SOL has built an enviable reputation for its accessibility
+                  and career-focused training. DU SOL is recognized by UGC and
+                  is accredited by NAAC, which makes it a respected institution
+                  that provides top-quality university education across India.
+                </p>
+
+                <p>
+                  Students have access to the most up-to-date information on DU
+                  SOL admissions, entrance information, scholarships, exam
+                  dates, and assistance with their studies. Our platform is
+                  committed to supporting students through their academic
+                  experience with reliable information and reliable education
+                  assistance.
+                </p>
+
+                <p>
+                  Students who are interested in DU SOL admission can explore
+                  information about the courses, eligibility requirements for
+                  application, procedures to apply, and important information
+                  via COLLEGEDRISHTI. By focusing on the student and providing
+                  an unwavering guidance system, we hope to assist students in
+                  making informed choices to ensure a successful educational
+                  future.
+                </p>
+              </div>
             </div>
 
-            {/* Stats */}
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-8'>
+            {/* <p className='text-gray-600 mt-2 text-sm md:text-base'>
+                Your one-stop destination for college admissions, entrance
+                exams, results, scholarships & education news.
+              </p> */}
+          </div>
+
+          {/* Stats */}
+          {/* <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-8'>
               {statsData.map(item => {
                 const Icon = iconMap[item?.icon]
 
@@ -199,10 +246,10 @@ const HomeSection = () => {
                   </div>
                 )
               })}
-            </div>
+            </div> */}
 
-            {/* Courses */}
-            <div className='mt-10'>
+          {/* Courses */}
+          {/* <div className='mt-10'>
               <div className='flex items-center gap-3 mb-6'>
                 <h3 className='text-xl font-bold text-[#5b168b] uppercase'>
                   Popular Courses
@@ -237,13 +284,12 @@ const HomeSection = () => {
               </div>
 
               {/* Bottom Button */}
-              <div className='flex justify-center mt-8'>
+          {/* <div className='flex justify-center mt-8'>
                 <button className='bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg transition'>
                   VIEW ALL COURSES
                 </button>
               </div>
-            </div>
-          </div>
+            </div> */}
         </div>
       </div>
     </section>
