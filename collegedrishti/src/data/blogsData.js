@@ -1,4 +1,14 @@
-import img1 from '../../public/assets/images/card.png'
+import React from 'react';
+  
+  const BlogsData = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default BlogsData;
+  import img1 from '../../public/assets/images/card.png'
 import img2 from '../../public/assets/images/banner-image.jpg'
 
 export const blogHeroData = {

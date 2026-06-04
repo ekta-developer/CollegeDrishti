@@ -1,4 +1,14 @@
-// components/course/instructor/instructorData.js
+import React from 'react';
+  
+  const InstructorData = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default InstructorData;
+  // components/course/instructor/instructorData.js
 import image from '../../../../public/assets/images/profile.jpg'
 export const instructorData = {
   title: 'Instructor',

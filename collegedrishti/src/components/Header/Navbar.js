@@ -1,4 +1,14 @@
-'use client'
+import React from 'react';
+  
+  const Navbar = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default Navbar;
+  'use client'
 
 import '../../app/globals.css'
 import { useState } from 'react'
