@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react'
 import Select from 'react-select'
-import { Flag } from 'react-svg-flag-kit'
 import Image from 'next/image'
 import img1 from '../../../public/assets/images/flags/in.png'
 import img2 from '../../../public/assets/images/flags/us.png'
