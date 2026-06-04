@@ -1,14 +1,4 @@
-import React from 'react';
-  
-  const Navbar = () =>  {
-	return (
-	  <div>
-	  </div>
-	);
-  }
-  
-  export default Navbar;
-  'use client'
+'use client'
 
 import '../../app/globals.css'
 import { useState } from 'react'
@@ -312,9 +302,7 @@ const Navbar = () => {
 
                       <div
                         className={`overflow-hidden transition-all duration-300 ${
-                          openDropdown === index
-                            ? 'max-h-300 mt-2'
-                            : 'max-h-0'
+                          openDropdown === index ? 'max-h-300 mt-2' : 'max-h-0'
                         }`}
                       >
                         {menu.title === 'Course Specialization'

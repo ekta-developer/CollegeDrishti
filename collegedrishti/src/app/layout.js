@@ -1,14 +1,3 @@
-import React from 'react';
-  
-  const Layout = () =>  {
-	return (
-	  <div>
-	  </div>
-	);
-  }
-  
-  export default Layout;
-  
 import './globals.css'
 import Navbar from '@/components/Header/Navbar'
 import Footer from '@/components/footer/Footer'
@@ -18,7 +7,7 @@ export const metadata = {
   description: 'DU SOL Admission Portal'
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout ({ children }) {
   return (
     <html lang='en' suppressHydrationWarning>
       <body suppressHydrationWarning>

@@ -1,14 +1,4 @@
-import React from 'react';
-  
-  const CourseData = () =>  {
-	return (
-	  <div>
-	  </div>
-	);
-  }
-  
-  export default CourseData;
-  import React from 'react'
+import React from 'react'
 
 const CourseData = () => {
   return <div></div>
