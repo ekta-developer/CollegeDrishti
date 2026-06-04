@@ -48,11 +48,16 @@ const menuData = [
           {
             title: 'Distance MCOM from DU SOL',
             slug: 'distance-mcom-from-du-sol'
+          },
+          {
+            title: 'Distance MLIS from DU SOL',
+            slug: 'distance-mlis-from-du-sol'
           }
         ]
       }
     ]
   },
+
   {
     title: 'Online Course',
     submenu: [
@@ -61,7 +66,10 @@ const menuData = [
         items: [
           { title: 'Online BA from DU SOL', slug: 'online-ba-from-du-sol' },
           { title: 'Online BBA from DU SOL', slug: 'online-bba-from-du-sol' },
-          { title: 'Online BCom from DU SOL', slug: 'online-bcom-from-du-sol' }
+          {
+            title: 'Online BCom from DU SOL',
+            slug: 'online-bcom-from-du-sol'
+          }
         ]
       },
       {
@@ -69,28 +77,70 @@ const menuData = [
         items: [
           { title: 'Online MA from DU SOL', slug: 'online-ma-from-du-sol' },
           { title: 'Online MBA from DU SOL', slug: 'online-mba-from-du-sol' },
-          { title: 'Online MCA from DU SOL', slug: 'online-mca-from-du-sol' }
+          { title: 'Online MCA from DU SOL', slug: 'online-mca-from-du-sol' },
+          {
+            title: 'Online MCOM from DU SOL',
+            slug: 'online-mcom-from-du-sol'
+          },
+          {
+            title: 'Online MSC from DU SOL',
+            slug: 'online-msc-from-du-sol'
+          },
+          {
+            title: 'Online MJMC from DU SOL',
+            slug: 'online-mjmc-from-du-sol'
+          },
+          {
+            title: 'Online MLIS from DU SOL',
+            slug: 'online-mlis-from-du-sol'
+          },
+          {
+            title: 'Online MTech from DU SOL',
+            slug: 'online-mtech-from-du-sol'
+          }
         ]
       }
     ]
   },
+
   {
     title: 'MBA Specialization',
     submenu: [
       {
-        title: 'MBA',
-        slug: 'mba-specialization',
-        courses: ['MBA Finance', 'MBA HR', 'MBA Marketing', 'MBA Operations']
+        title: 'MBA in Information Technology',
+        slug: 'mba-information-technology'
       },
       {
-        title: 'MCA',
-        slug: 'mca-specialization',
-        courses: ['MCA AI & ML', 'MCA Data Science']
+        title: 'MBA in Business Analytics',
+        slug: 'mba-business-analytics'
       },
       {
-        title: 'MCOM',
-        slug: 'mcom-specialization',
-        courses: ['MCom Accounting', 'MCom Finance']
+        title: 'MBA in Hospital Administration Management',
+        slug: 'mba-hospital-administration-management'
+      },
+      {
+        title: 'MBA in International Trade Management',
+        slug: 'mba-international-trade-management'
+      },
+      {
+        title: 'MBA in Rural Management',
+        slug: 'mba-rural-management'
+      },
+      {
+        title: 'MBA in Retail Management',
+        slug: 'mba-retail-management'
+      },
+      {
+        title: 'MBA in Business Management',
+        slug: 'mba-business-management'
+      },
+      {
+        title: 'MBA in Project Management',
+        slug: 'mba-project-management'
+      },
+      {
+        title: 'MBA in Marketing Management',
+        slug: 'mba-marketing-management'
       }
     ]
   },
@@ -99,8 +149,25 @@ const menuData = [
     title: 'Student Zone',
     submenu: [
       { title: 'DUSOL Admission', slug: 'dusol-admission' },
+      { title: 'DUSOL Courses Fees', slug: 'dusol-courses-fees' },
+      { title: 'DUSOL Hall Ticket', slug: 'dusol-hall-ticket' },
+      {
+        title: 'DU SOL Study Material',
+        slug: 'du-sol-study-material'
+      },
       { title: 'DUSOL Result', slug: 'dusol-result' },
-      { title: 'DU SOL Study Material', slug: 'du-sol-study-material' }
+      {
+        title: 'DU SOL Library Portal',
+        slug: 'du-sol-library-portal'
+      },
+      {
+        title: 'DU SOL Assignment Status',
+        slug: 'du-sol-assignment-status'
+      },
+      {
+        title: 'DUSOL Alternative Universities',
+        slug: 'dusol-alternative-universities'
+      }
     ]
   },
 
